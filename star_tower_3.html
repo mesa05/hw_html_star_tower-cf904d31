@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Star_Tower_2_三角形</title>
+</head>
+
+<body>
+    請輸入星星數:
+    <input type="text" id="txt1" name="txt1" value="" size="40"/>
+    <br>
+    <input type="Button" id="button1" name="button1" value="點我一下，執行 JavaScript" onclick="start();"/>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="d1"></div>
+    
+    <script>
+    function start(){
+        var number = txt1.value;
+        for(var i= 1 ; i < number ; i++){
+            for(var j = 1 ; j <= i ; j++){
+                d1.innerHTML += "*"
+            }
+            d1.innerHTML += "<br>"
+        }
+        for(var i= number ; i >=0 ; i--){
+            for(var j = 1 ; j <= i ; j++){
+                d1.innerHTML += "*"
+            }
+            d1.innerHTML += "<br>"
+        }
+    }
+        
+    </script>
+</body>
+    
+</html>
